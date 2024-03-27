@@ -22,7 +22,7 @@ if __name__ == '__main__':
         "essence": "false"
     }
     response = requests.get(url, headers=headers, params=params).json()
-    text = ""
+    text_uag = ""
     for res in response['records']:
-        text = text + res["title"]+';'
-    print(text)
+        text_uag = text_uag + res["title"]+';'
+    print(text_uag)
